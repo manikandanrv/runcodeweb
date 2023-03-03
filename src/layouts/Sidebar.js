@@ -10,56 +10,56 @@
       href: "/starter",
       icon: "bi bi-house",
     },
-    {
-      title: "Rooms View",
-      href: "/rooms",
-      icon: "bi bi-house",
-    },
     // {
-    //   title: "Alert",
-    //   href: "/alerts",
-    //   icon: "bi bi-bell",
-    // },
-    // {
-    //   title: "Badges",
-    //   href: "/badges",
-    //   icon: "bi bi-patch-check",
-    // },
-    // {
-    //   title: "Buttons",
-    //   href: "/buttons",
-    //   icon: "bi bi-hdd-stack",
-    // },
-    // {
-    //   title: "Cards",
-    //   href: "/cards",
-    //   icon: "bi bi-card-text",
-    // },
-    // {
-    //   title: "Grid",
-    //   href: "/grid",
-    //   icon: "bi bi-columns",
+    //   title: "Rooms View",
+    //   href: "/rooms",
+    //   icon: "bi bi-house",
     // },
     {
-      title: "Approvals",
-      href: "/requests",
-      icon: "bi bi-check2-square",
+      title: "Alert",
+      href: "/alerts",
+      icon: "bi bi-bell",
     },
     {
-      title: "Check-in",
-      href: "/checkin",
-      icon: "bi bi-people",
+      title: "Badges",
+      href: "/badges",
+      icon: "bi bi-patch-check",
     },
     {
-      title: "Frro Upload",
-      href: "/frro",
-      icon: "bi bi-envelope",
+      title: "Buttons",
+      href: "/buttons",
+      icon: "bi bi-hdd-stack",
+    },
+    {
+      title: "Cards",
+      href: "/cards",
+      icon: "bi bi-card-text",
+    },
+    {
+      title: "Grid",
+      href: "/grid",
+      icon: "bi bi-columns",
     },
     // {
-    //   title: "Breadcrumbs",
-    //   href: "/breadcrumbs",
-    //   icon: "bi bi-link",
+    //   title: "Approvals",
+    //   href: "/requests",
+    //   icon: "bi bi-check2-square",
     // },
+    // {
+    //   title: "Check-in",
+    //   href: "/checkin",
+    //   icon: "bi bi-people",
+    // },
+    // {
+    //   title: "Frro Upload",
+    //   href: "/frro",
+    //   icon: "bi bi-envelope",
+    // },
+    {
+      title: "Breadcrumbs",
+      href: "/breadcrumbs",
+      icon: "bi bi-link",
+    },
   ];
 
   const Sidebar = () => {
@@ -85,7 +85,7 @@
             onClick={() => showMobilemenu()}
           ></Button>
         </div>
-        <div className="card-title">  Admin - <br/>Guru Ramana</div>
+        {/* <div className="card-title">  Admin - <br/>Guru Ramana</div> */}
         <div className="pt-4 mt-2">
           <Nav vertical className="sidebarNav">
             {navigation.map((navi, index) => (

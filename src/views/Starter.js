@@ -1,5 +1,6 @@
 import { Col, Row } from "reactstrap";
-// import Feeds from "../components/dashboard/Feeds";
+import RoomsView from "../components/dashboard/Rooms";
+import Feeds from "../components/dashboard/Feeds";
 import WorkspacesTable from "../components/dashboard/DashboardTable";
 import TopCards from "../components/TopCards";
 import bg1 from "../assets/images/bg/bg1.jpg";
@@ -87,6 +88,8 @@ const Starter = () => {
       {/***Sales & Feed***/}
       <Row>
         <Col sm="6" lg="6" xl="7" xxl="8">
+        <RoomsView />
+
         </Col>
         <Col sm="6" lg="6" xl="5" xxl="4">
         </Col>

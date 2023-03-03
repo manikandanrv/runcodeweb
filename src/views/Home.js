@@ -1,13 +1,42 @@
 import React from "react";
 import axios from "axios";
 import Clock from "./../components/clock";
-
+import WorkspacesTable from "../components/dashboard/WorkspaceTable";
+import SalesChart from "../components/dashboard/SalesChart"
 class Home extends React.Component {
 	state = {
 		details: [],
 		dashboard_name: "",
 		dashboard_description: "",
 	};
+
+	// tableData = [
+	// 	{
+	// 	  dashboard_name: "2022-aa-bb-cccc",
+	// 	  dashboard_description: "asasdsdsfasdf",
+	// 	},
+	// ];	  
+	 tableData = [
+		{
+		  avatar: "user2",
+		  name: "Manikandan RV",
+		  email: "manikandan.rv@gmail.com",
+		  Request: "Chennai, India",
+		  status: "pending",
+		  weeks: "2022-02-04 to 2022-02-04",
+		  budget: "3",
+		},
+		{
+		  avatar: "user1",
+		  name: "Prasanna",
+		  email: "rprasannamalai@gmail.com",
+		  Request: "Chennai, India",
+		  status: "pending",
+		  weeks: "2022-02-04 to 2022-02-04",
+		  budget: "3",
+		},
+	];
+	  
 
 	componentDidMount() {
 		let data;
@@ -66,7 +95,7 @@ class Home extends React.Component {
 	render() {
 		return (
       <div>
-              <Clock />
+              <SalesChart/>
 
             {this.state.details.map((detail, id) =>  (
             <div key={id}>

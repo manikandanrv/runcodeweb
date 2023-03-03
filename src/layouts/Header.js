@@ -56,7 +56,7 @@ const Header = () => {
         </Button>
       </div>
 
-      {/* <Collapse navbar isOpen={isOpen}>
+      <Collapse navbar isOpen={isOpen}>
         <Nav className="me-auto" navbar>
           <NavItem>
             <Link to="/starter" className="nav-link">
@@ -99,7 +99,7 @@ const Header = () => {
             <DropdownItem>Logout</DropdownItem>
           </DropdownMenu>
         </Dropdown>
-      </Collapse> */}
+      </Collapse>
     </Navbar>
   );
 };

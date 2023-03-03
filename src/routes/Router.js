@@ -8,7 +8,19 @@ const FullLayout = lazy(() => import("../layouts/FullLayout.js"));
 
 const Starter = lazy(() => import("../views/Starter.js"));
 const Home = lazy(() => import("../views/Home.js"));
-
+const Alerts = lazy(() => import("../views/ui/Alerts.js"));
+const About = lazy(() => import("../views/About.js"));
+const Badges = lazy(() => import("../views/ui/Badges"));
+const Buttons = lazy(() => import("../views/ui/Buttons"));
+const Cards = lazy(() => import("../views/ui/Cards"));
+const Grid = lazy(() => import("../views/ui/Grid"));
+const Tables = lazy(() => import("../views/ui/Tables"));
+// const Checkin = lazy(() => import("../views/ui/Checkin"));
+// const ApprovalForm = lazy(() => import("../views/ui/ApprovalForm"));
+// const Forms = lazy(() => import("../views/ui/MultistepForm"));
+const Breadcrumbs = lazy(() => import("../views/ui/Breadcrumbs"));
+//const Example = lazy(() => import("../views/ui/ExampleForms"));
+// const RoomsTree = lazy(() => import("../components/dashboard/RoomsTree"));
 
 /*****Routes******/
 
@@ -20,6 +32,20 @@ const ThemeRoutes = [
       { path: "/", element: <Navigate to="/home" /> },
       { path: "/starter", exact: true, element: <Starter /> },
       { path: "/home", exact: true, element: <Home /> },
+      { path: "/alerts", exact: true, element: <Alerts /> },
+      { path: "/about", exact: true, element: <About /> },
+      // { path: "/frro", exact: true, element: <Frro /> },
+      // { path: "/rooms", exact: true, element: <RoomsTree /> },
+      { path: "/badges", exact: true, element: <Badges /> },
+      { path: "/buttons", exact: true, element: <Buttons /> },
+      { path: "/cards", exact: true, element: <Cards /> },
+      { path: "/grid", exact: true, element: <Grid /> }, 
+      // { path: "/checkin", exact: true, element: <Checkin /> },
+      { path: "/table", exact: true, element: <Tables /> },
+      // { path: "/requests", exact: true, element: <RequestsTable /> },
+      // { path: "/viewrequest", exact: true, element: <ApprovalForm /> },
+      // { path: "/forms", exact: true, element: <Forms /> },
+      { path: "/breadcrumbs", exact: true, element: <Breadcrumbs /> },
     ],
   },
 ];
